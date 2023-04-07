@@ -1,2 +1,102 @@
 @import url(reset.css);
 @import url(config.css);
+
+body {
+  background-color: var(--clr-neutral-900);
+  display: grid;
+  place-items: center;
+  font-family: var(--ff-default);
+  font-size: var(--fs-default);
+}
+
+.nft {
+  --radius: .5rem;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  background-color: var(--clr-neutral-700);
+}
+
+.nft__hero  {
+  border-radius: var(--radius);
+}
+
+.nft__hero img:hover {
+  background-image: url(/images/icon-view.svg);
+}
+
+.nft__text{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nft__text h1 {
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-regular);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.nft__text h1:hover {
+  color: var(--clr-primary-300);
+}
+
+
+
+.nft__text p {
+  color: var(--clr-primary-400);
+  font-weight: var(--fw-thin);
+  font-size: .950rem;
+}
+
+.nft__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-group{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.nft__details-eth span{
+  color: var(--clr-primary-300);
+  font-size: .875rem;
+}
+
+.nft__details-days span{
+  font-size: .875rem;
+}
+
+.nft__footer{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: .875rem;
+  font-weight: var(--fw-thin);
+  color: var(--clr-primary-400);
+}
+
+.nft__author{
+  color: var(--clr-neutral-100);
+  cursor: pointer;
+}
+
+.nft__author:hover{
+  color: var(--clr-primary-300);
+}
+
+
+.nft__footer img{
+  border: 2px solid var(--clr-neutral-100
+  );
+  width: 10%;
+  clip-path: circle();
+  border-radius: 50%;
+}

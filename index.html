@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NFT preview card component</title>
-</head>
-<body>
-  <>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT preview card component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section class="nft">
-      <div class="nft__hero">
-        <img src="/images/image-equilibrium.jpg" alt="nft image">
-        <article class="nft__text">
-          <h1>Equilibrium #3429</h1>
-          <p>Our Equilibrium collection promotes balance and calm</p>
-          <div class="nft__details">
-            <div class="nft__details-eth">
-              <img src="/images/icon-ethereum.svg" alt="icon-ethereum">
-              <span>0.041ETH</span>
-            </div>
-            <div class="nft__details-days">
-              <img src="/images/icon-clock.svg" alt="icon-clock">
-              <span>3 days left</span>
-            </div>
+      <article class="nft__hero">
+        <img src="/images/image-equilibrium.jpg" alt="nft image" />
+      </article>
+      <article class="nft__text">
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm</p>
+        <div class="nft__details">
+          <div class="nft__details-eth flex-group">
+            <img src="/images/icon-ethereum.svg" alt="icon-ethereum" />
+            <span>0.041ETH</span>
           </div>
-        </article>
-        <article class="nft__footer">
-          <img src="/images/image-avatar.png" alt="image-avatar">
-          Creation of <span>Jules Wyvern</span>
-        </article>
-      </div>
+          <div class="nft__details-days flex-group">
+            <img src="/images/icon-clock.svg" alt="icon-clock" />
+            <span>3 days left</span>
+          </div>
+        </div>
+      </article>
+      <article class="nft__footer">
+        <img src="/images/image-avatar.png" alt="image-avatar" />
+          Creation of <span class='nft__author'>Jules Wyvern</span>
+      </article>
     </section>
-  </
-</body>
+  </body>
 </html>
