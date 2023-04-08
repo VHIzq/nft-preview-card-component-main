@@ -25,6 +25,22 @@ body {
   position: relative;
 }
 
+.nft__hero::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: var(--clr-primary-300);
+  transition: opacity 0.5s ease;
+}
+
+.nft__hero:hover::before{
+  opacity: .6;
+}
+
 .nft__hero:hover .hero__icon{
   display: block;
 }
