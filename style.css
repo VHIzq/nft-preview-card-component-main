@@ -21,6 +21,22 @@ body {
   background-color: var(--clr-neutral-700);
 }
 
+.nft__hero{
+  position: relative;
+}
+
+.nft__hero:hover .hero__icon{
+  display: block;
+}
+
+.hero__icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
 .nft__hero img {
   border-radius: var(--radius);
 }
@@ -41,8 +57,6 @@ body {
 .nft__text h1:hover {
   color: var(--clr-primary-300);
 }
-
-
 
 .nft__text p {
   color: var(--clr-primary-400);
@@ -68,6 +82,7 @@ body {
 
 .nft__details-days span{
   font-size: .875rem;
+  color: var(--clr-primary-400);
 }
 
 .nft__footer{
